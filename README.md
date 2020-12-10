@@ -59,7 +59,7 @@ Start app with:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/LoboArkano/calculator/issues).
+Feel free to check the [issues page](https://github.com/LoboArkano/bookstore/issues).
 
 ## Show your support
 
