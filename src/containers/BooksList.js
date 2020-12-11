@@ -1,16 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Book from '../components/Book';
 
 const BooksList = props => {
   const { books } = props;
 
   const getContent = books => books.map(book => (
-    <tr key={book.id}>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-    </tr>
+    <Book key={book.id} book={book} />
   ));
 
   return (
