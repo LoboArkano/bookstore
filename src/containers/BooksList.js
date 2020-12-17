@@ -12,12 +12,16 @@ const BooksList = props => {
 
   return (
     <table key="booksList">
-      <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
-      {getContent(books)}
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {getContent(books)}
+      </tbody>
     </table>
   );
 };
@@ -36,4 +40,4 @@ const mapStatetoProps = state => {
   return { books };
 };
 
-export default connect(mapStatetoProps)(BooksList);
+export default connect(mapStatetoProps, null)(BooksList);

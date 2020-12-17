@@ -1,7 +1,6 @@
-import { combineReducers, createStore } from 'redux';
-import bookReducer from './book';
+import { combineReducers } from 'redux';
+import books from './book';
 
-const rootReducer = combineReducers({ bookReducer });
+const rootReducer = combineReducers({ books });
 
-const store = createStore(rootReducer);
-console.log(store.getState());
+export default rootReducer;
