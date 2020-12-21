@@ -7,8 +7,12 @@ import Book from '../components/Book';
 const BooksList = props => {
   const { books, removeBook } = props;
 
+  const handleRemoveBook = book => {
+    removeBook(book);
+  };
+
   const getContent = books => books.map(book => (
-    <Book key={book.id} book={book} removeBook={removeBook} />
+    <Book key={book.id} book={book} removeBook={() => handleRemoveBook(book)} />
   ));
 
   return (
