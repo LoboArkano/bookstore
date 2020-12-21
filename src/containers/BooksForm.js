@@ -8,6 +8,15 @@ const BooksForm = () => {
     category: '',
   });
 
+  const handleChange = useCallback(e => {
+    const { value } = e.target;
+
+    setState({
+      ...state,
+      [e.target.name]: value,
+    });
+  });
+
   return (
     <div>
       <form>
@@ -19,12 +28,14 @@ const BooksForm = () => {
             name="title"
             placeholder="Book Title"
             value={state.title}
+            onChange={handleChange}
             required
           />
         </label>
         <select
           name="category"
           value={state.category}
+          onChange={handleChange}
           required
         >
           <option key="none" value="none">None</option>
