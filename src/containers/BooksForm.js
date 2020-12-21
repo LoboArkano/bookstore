@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import { addBook } from '../actions/index';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -15,6 +16,21 @@ const BooksForm = () => {
       ...state,
       [e.target.name]: value,
     });
+  });
+
+  const handleSubmit = useCallback(() => {
+    if (state.title && state.category) {
+      addBook({
+        title: state.title,
+        category: state.category,
+      });
+
+      setState({
+        ...state,
+        title: '',
+        category: '',
+      });
+    }
   });
 
   return (
@@ -50,7 +66,7 @@ const BooksForm = () => {
             ))
           }
         </select>
-        <button type="submit">ADD</button>
+        <button type="submit" onClick={handleSubmit}>ADD</button>
       </form>
     </div>
   );
