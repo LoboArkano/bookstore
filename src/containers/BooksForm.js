@@ -1,9 +1,11 @@
 import React, { useCallback, useState } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { addBook } from '../actions/index';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-const BooksForm = () => {
+const BooksForm = props => {
   const [state, setState] = useState({
     title: '',
     category: '',
@@ -16,11 +18,12 @@ const BooksForm = () => {
       ...state,
       [e.target.name]: value,
     });
-  });
+  }, [state]);
 
   const handleSubmit = useCallback(() => {
     if (state.title && state.category) {
-      addBook({
+      props.addBook({
+        id: String(Math.floor(Math.random() * 100000000)),
         title: state.title,
         category: state.category,
       });
@@ -54,7 +57,7 @@ const BooksForm = () => {
           onChange={handleChange}
           required
         >
-          <option key="none" value="none">None</option>
+          <option key="none" value="">None</option>
           {
             bookCategories.map(category => (
               <option
@@ -72,4 +75,8 @@ const BooksForm = () => {
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  addBook: PropTypes.func.isRequired,
+};
+
+export default connect(null, { addBook })(BooksForm);
