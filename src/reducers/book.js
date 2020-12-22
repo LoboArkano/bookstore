@@ -2,7 +2,7 @@ const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 const INITIAL_STATE = [];
 
-const books = (state = INITIAL_STATE, action) => {
+const bookReducer = (state = INITIAL_STATE, action) => {
   const book = action.payload;
 
   switch (action.type) {
@@ -18,4 +18,4 @@ const books = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default books;
+export default bookReducer;
