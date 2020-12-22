@@ -17,6 +17,7 @@ const INITIAL_STATE = {
     { id: randomKey(), title: 'Learn JS', category: 'Learning' },
     { id: randomKey(), title: 'The Martian', category: 'Sci-Fi' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, INITIAL_STATE);
