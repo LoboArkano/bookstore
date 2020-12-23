@@ -4,8 +4,19 @@
   display: flex;
 }
 
+.f-dir-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .justify-c-fe {
@@ -48,8 +59,15 @@
   border-color: #c4c4c4;
 }
 
+.font-theme-1 {
+  font-size: 14px;
+  color: #4386bf;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 300;
+}
+
 .main {
-  height: calc(100vh - 95px);
+  min-height: calc(100vh - 95px);
   padding: 38px 100px;
   background-color: #f5f6fa;
 }

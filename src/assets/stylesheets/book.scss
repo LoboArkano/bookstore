@@ -1,0 +1,73 @@
+@import 'variables', 'generic_classes';
+
+.book-container {
+  margin-top: 15px;
+  padding: 32px 0 26px 27px;
+  height: 170px;
+  border-radius: 4%;
+  border: 1px solid $gray;
+  background-color: $white;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+
+  .left {
+    width: 67%;
+    height: 100%;
+
+    .category,
+    .title,
+    .author {
+      font-size: 14px;
+    }
+
+    .category {
+      margin-bottom: 8px;
+      font-weight: 700;
+      opacity: 0.5;
+      color: $black;
+    }
+
+    .title {
+      margin-bottom: 8px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      color: $black;
+    }
+
+    .author,
+    .action {
+      @extend .font-theme-1;
+    }
+
+    .list {
+      margin-top: auto;
+
+      .item {
+        height: 19px;
+        padding-right: 15px;
+        padding-left: 17px;
+        border-left: 2px solid $gray;
+
+        .action {
+          cursor: pointer;
+          width: max-content;
+
+          &:hover {
+            color: $azure;
+          }
+        }
+      }
+
+      .item:first-child {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+  }
+
+  .right {
+    width: 32%;
+    background-color: rgb(62, 146, 66);
+  }
+}
