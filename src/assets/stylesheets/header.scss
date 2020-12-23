@@ -1,0 +1,48 @@
+@import 'variables', 'generic_classes';
+
+.navbar {
+  height: $navHeight;
+  padding: 23px 100px 27px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid $gray;
+
+  .nav {
+    width: 495px;
+
+    .brand {
+      height: max-content;
+      color: $azure;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav-list {
+      height: max-content;
+      width: 205px;
+
+      .nav-item {
+        color: $black;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 1.9px;
+      }
+
+      .nav-item:last-child {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .avatar-cont {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 14px;
+    border: 1px solid $gray;
+
+    .avatar {
+      height: 17px;
+      width: 17px;
+    }
+  }
+}
