@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../assets/stylesheets/categoryFilter.css';
 
 const filterOptions = [
   'All', 'Action', 'Biography', 'History',
@@ -10,10 +11,10 @@ const CategoryFilter = props => {
   const { changeFilter } = props;
 
   return (
-    <div>
-      <label htmlFor="filter">
-        Filter
-        <select name="filter" id="filter" onChange={changeFilter}>
+    <div className="d-flex justify-c-fe w-100">
+      <label className="label d-flex align-i-c" htmlFor="filter">
+        Filter:
+        <select className="filter" name="filter" id="filter" onChange={changeFilter}>
           {
             filterOptions.map(option => (
               <option key={option} value={option}>

@@ -1,0 +1,15 @@
+@import 'variables', 'generic_classes';
+
+.label {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: $dark-gray;
+  font-weight: 700;
+
+  .filter {
+    @extend .select;
+
+    width: 150px;
+    margin-left: 10px;
+  }
+}

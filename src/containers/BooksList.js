@@ -33,6 +33,7 @@ const BooksList = props => {
 
   return (
     <>
+      <CategoryFilter changeFilter={handleFilterChange} />
       <table key="booksList">
         <thead>
           <tr>
@@ -46,7 +47,6 @@ const BooksList = props => {
           {getContent(filteredBooks(books, filter))}
         </tbody>
       </table>
-      <CategoryFilter changeFilter={handleFilterChange} />
     </>
   );
 };
