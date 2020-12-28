@@ -23,6 +23,7 @@
     .category {
       margin-bottom: 8px;
       font-weight: 700;
+      font-family: 'Monserrat', Arial, Helvetica, sans-serif;
       opacity: 0.5;
       color: $black;
     }
@@ -82,10 +83,39 @@
         border-left-color: rgb(223, 223, 223);
         transform: rotate(45deg);
       }
+
+      .percentage,
+      .status {
+        font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+
+      .percentage {
+        margin-bottom: 3px;
+        font-size: 32px;
+      }
+
+      .status {
+        font-size: 14px;
+        opacity: 0.5;
+      }
     }
   }
 
   .right {
     width: 32%;
+    padding-left: 59px;
+
+    .title {
+      margin-bottom: 10px;
+      font-size: 13px;
+      opacity: 0.5;
+    }
+
+    .current {
+      margin-bottom: 23px;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+    }
   }
 }

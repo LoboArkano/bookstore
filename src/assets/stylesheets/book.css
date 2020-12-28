@@ -92,6 +92,7 @@
 .book-container .left .category {
   margin-bottom: 8px;
   font-weight: 700;
+  font-family: 'Monserrat', Arial, Helvetica, sans-serif;
   opacity: 0.5;
   color: #121212;
 }
@@ -150,7 +151,36 @@
           transform: rotate(45deg);
 }
 
+.book-container .left .read .percentage,
+.book-container .left .read .status {
+  font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.book-container .left .read .percentage {
+  margin-bottom: 3px;
+  font-size: 32px;
+}
+
+.book-container .left .read .status {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
 .book-container .right {
   width: 32%;
+  padding-left: 59px;
+}
+
+.book-container .right .title {
+  margin-bottom: 10px;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.book-container .right .current {
+  margin-bottom: 23px;
+  font-size: 16px;
+  letter-spacing: -0.4px;
 }
 /*# sourceMappingURL=book.css.map */

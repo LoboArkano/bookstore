@@ -33,14 +33,15 @@ const Book = props => {
         </div>
         <div className="read d-flex align-i-c">
           <div className="circle" />
-          <div className="">
-            <div>0%</div>
-            <div>Reading</div>
+          <div>
+            <p className="percentage">0%</p>
+            <p className="status">Reading</p>
           </div>
         </div>
       </div>
-      <div className="right">
-        right
+      <div className="right d-flex f-dir-c h-100">
+        <p className="title">Current Chapter</p>
+        <p className="current">Introduction</p>
       </div>
     </article>
   );
