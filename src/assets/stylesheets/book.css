@@ -131,8 +131,26 @@
   border-left: none;
 }
 
+.book-container .left .read {
+  width: 250px;
+  height: 70px;
+  border-right: 2px solid #e8e8e8;
+}
+
+.book-container .left .read .circle {
+  margin-right: 21px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#307bbe), to(#379cf6)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to bottom, #307bbe, #379cf6) border-box;
+  border: 5px solid transparent;
+  border-left-color: #dfdfdf;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .book-container .right {
   width: 32%;
-  background-color: #3e9242;
 }
 /*# sourceMappingURL=book.css.map */
