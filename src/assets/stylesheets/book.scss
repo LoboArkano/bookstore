@@ -117,5 +117,17 @@
       font-size: 16px;
       letter-spacing: -0.4px;
     }
+
+    .update {
+      cursor: pointer;
+      height: 33px;
+      width: 184px;
+      border-radius: 3px;
+      background-color: $azure;
+      color: $white;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
   }
 }

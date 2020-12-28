@@ -42,6 +42,7 @@ const Book = props => {
       <div className="right d-flex f-dir-c h-100">
         <p className="title">Current Chapter</p>
         <p className="current">Introduction</p>
+        <button className="update" type="button">UPDATE PROGRESS</button>
       </div>
     </article>
   );
