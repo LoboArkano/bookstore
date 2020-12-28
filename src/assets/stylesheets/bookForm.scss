@@ -1,0 +1,49 @@
+@import 'variables', 'generic_classes';
+
+.form-container {
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid $gray;
+  font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+
+  .title {
+    margin-bottom: 20px;
+    color: $dark-gray;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.18px;
+  }
+
+  .input {
+    width: 55%;
+    padding: 13px 17px;
+    color: $pinkish-gray;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.15px;
+  }
+
+  .category {
+    @extend .select;
+
+    width: 23%;
+  }
+
+  .add-btn {
+    width: 184px;
+    height: 45px;
+    background-color: $azure;
+    color: $white;
+    border-radius: 3px;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+}
