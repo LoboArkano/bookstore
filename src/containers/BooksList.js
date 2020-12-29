@@ -33,10 +33,10 @@ const BooksList = props => {
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange} />
       <div className="w-100" key="booksList">
         {getContent(filteredBooks(books, filter))}
       </div>
+      <CategoryFilter changeFilter={handleFilterChange} />
     </>
   );
 };

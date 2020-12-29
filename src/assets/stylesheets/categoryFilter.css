@@ -1,13 +1,14 @@
 .d-flex {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .f-dir-c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .w-100 {
@@ -20,24 +21,23 @@
 
 .justify-c-fe {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .justify-c-sb {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .align-i-c {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.select,
-.label .filter {
+.select, .filter-container .label .filter {
   padding: 6px 15px 9px 16px;
   border-radius: 4%;
   font-size: 16px;
@@ -47,21 +47,15 @@
   background-color: #fff;
   border: 1px solid #e8e8e8;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url("../images/down-arrow.png");
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: 90%;
 }
 
-.label .filter {
-  width: 150px;
-  margin-left: 10px;
-}
-
-.select:hover,
-.label .filter:hover {
+.select:hover, .filter-container .label .filter:hover {
   border-color: #c4c4c4;
 }
 
@@ -72,9 +66,21 @@
   font-weight: 300;
 }
 
-.label {
+.filter-container {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.filter-container .label {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: #888;
   font-weight: 700;
 }
+
+.filter-container .label .filter {
+  width: 150px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=categoryFilter.css.map */

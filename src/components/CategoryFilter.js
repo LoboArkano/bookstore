@@ -11,7 +11,7 @@ const CategoryFilter = props => {
   const { changeFilter } = props;
 
   return (
-    <div className="d-flex justify-c-fe w-100">
+    <div className="filter-container d-flex w-100">
       <label className="label d-flex align-i-c" htmlFor="filter">
         Filter:
         <select className="filter" name="filter" id="filter" onChange={changeFilter}>

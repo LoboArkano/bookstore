@@ -1,13 +1,14 @@
 .d-flex {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .f-dir-c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .w-100 {
@@ -20,20 +21,20 @@
 
 .justify-c-fe {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .justify-c-sb {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .align-i-c {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .select {
@@ -46,8 +47,8 @@
   background-color: #fff;
   border: 1px solid #e8e8e8;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url("../images/down-arrow.png");
   background-repeat: no-repeat;
   background-size: 15px;
@@ -77,6 +78,8 @@
 }
 
 .navbar .nav .brand {
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   color: #0290ff;
   font-size: 30px;
@@ -84,6 +87,8 @@
 }
 
 .navbar .nav .nav-list {
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   width: 205px;
 }
@@ -111,3 +116,4 @@
   height: 17px;
   width: 17px;
 }
+/*# sourceMappingURL=header.css.map */
