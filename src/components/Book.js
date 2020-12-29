@@ -1,19 +1,50 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../assets/stylesheets/book.css';
 
 const Book = props => {
   const { book, removeBook } = props;
   const { id, title, category } = book;
 
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td>
-        <button type="button" onClick={() => removeBook(id)}>Remove Book</button>
-      </td>
-    </tr>
+    <article className="book-container d-flex">
+      <div className="left d-flex justify-c-sb align-i-c h-100">
+        <div className="d-flex f-dir-c h-100">
+          <h3 className="category">{category}</h3>
+          <h2 className="title">{title}</h2>
+          <h4 className="author">Author</h4>
+          <ul className="list d-flex">
+            <li className="item">
+              <button className="action" type="button">Comments</button>
+            </li>
+            <li className="item">
+              <button
+                className="action"
+                type="button"
+                onClick={() => removeBook(id)}
+              >
+                Remove
+              </button>
+            </li>
+            <li className="item">
+              <button className="action" type="button">Edit</button>
+            </li>
+          </ul>
+        </div>
+        <div className="read d-flex align-i-c">
+          <div className="circle" />
+          <div>
+            <p className="percentage">0%</p>
+            <p className="status">Reading</p>
+          </div>
+        </div>
+      </div>
+      <div className="right d-flex f-dir-c h-100">
+        <p className="title">Current Chapter</p>
+        <p className="current">Introduction</p>
+        <button className="update" type="button">UPDATE PROGRESS</button>
+      </div>
+    </article>
   );
 };
 

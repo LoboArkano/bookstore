@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addBook } from '../actions/index';
+import '../assets/stylesheets/bookForm.css';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -37,11 +38,12 @@ const BooksForm = props => {
   });
 
   return (
-    <div>
+    <div className="form-container w-100">
       <form>
-        <label htmlFor="title">
-          Title:
+        <h4 className="title">ADD NEW BOOK</h4>
+        <div className="d-flex justify-c-sb w-100">
           <input
+            className="input"
             type="text"
             id="title"
             name="title"
@@ -50,26 +52,27 @@ const BooksForm = props => {
             onChange={handleChange}
             required
           />
-        </label>
-        <select
-          name="category"
-          value={state.category}
-          onChange={handleChange}
-          required
-        >
-          <option key="none" value="">None</option>
-          {
-            bookCategories.map(category => (
-              <option
-                key={category}
-                value={category}
-              >
-                { category }
-              </option>
-            ))
-          }
-        </select>
-        <button type="submit" onClick={handleSubmit}>ADD</button>
+          <select
+            className="category"
+            name="category"
+            value={state.category}
+            onChange={handleChange}
+            required
+          >
+            <option key="none" value="">Category</option>
+            {
+              bookCategories.map(category => (
+                <option
+                  key={category}
+                  value={category}
+                >
+                  { category }
+                </option>
+              ))
+            }
+          </select>
+          <button className="add-btn" type="submit" onClick={handleSubmit}>ADD BOOK</button>
+        </div>
       </form>
     </div>
   );

@@ -1,0 +1,54 @@
+.d-flex {
+  display: flex;
+}
+
+.f-dir-c {
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.justify-c-fe {
+  justify-content: flex-end;
+}
+
+.justify-c-sb {
+  justify-content: space-between;
+}
+
+.align-i-c {
+  align-items: center;
+}
+
+.select {
+  padding: 6px 15px 9px 16px;
+  border-radius: 4%;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  color: $pinkish-gray;
+  background-color: $white;
+  border: 1px solid $gray;
+  appearance: none;
+  background-image: url("../images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 90%;
+
+  &:hover {
+    border-color: $pinkish-gray;
+  }
+}
+
+.font-theme-1 {
+  font-size: 14px;
+  color: $blue;
+  background-color: rgba($color: #000, $alpha: 0);
+  font-weight: 300;
+}

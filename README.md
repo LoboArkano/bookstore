@@ -1,10 +1,14 @@
 # Bookstore
 
-React/Redux project.
+Bookstore CMS. This is a React/Redux App that can store a book list. It's possible to add and remove books.
 
 ## Live Demo
 
 [Heroku](https://bookstore-roberto.herokuapp.com/)
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/33432289/103246416-f6056400-4928-11eb-8e31-a6fdab8f4851.png)
 
 ## Built With
 

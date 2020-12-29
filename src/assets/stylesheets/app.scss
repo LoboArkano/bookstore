@@ -1,0 +1,7 @@
+@import 'variables', 'generic_classes';
+
+.main {
+  min-height: calc(100vh - #{$navHeight});
+  padding: 38px 100px;
+  background-color: $pale-gray;
+}
